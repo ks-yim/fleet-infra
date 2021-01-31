@@ -1,0 +1,10 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1alpha1
+kind: ImageRepository
+metadata:
+  name: hello
+  namespace: flux-system
+spec:
+  image: point1304/hello-server
+  interval: 1m0s
+
