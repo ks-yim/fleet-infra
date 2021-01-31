@@ -5,8 +5,13 @@ metadata:
   name: hello
   namespace: flux-system
 spec:
-  interval: 30s
+  interval: 1m 
   ref:
     branch: main 
   url: https://github.com/ks-yim/fluxcd-playground
+  ignore: |
+    # exclude all
+    /*
+    # include charts directory
+    !/charts/
 
