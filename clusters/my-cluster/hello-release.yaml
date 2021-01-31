@@ -3,7 +3,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: hello
-  namespace: flux-system
+  namespace: default
 spec:
   chart:
     spec:
@@ -11,5 +11,6 @@ spec:
       sourceRef:
         kind: GitRepository
         name: hello
+        namespace: flux-system
   interval: 1m0s
 
