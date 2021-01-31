@@ -13,4 +13,7 @@ spec:
         name: hello
   interval: 1m0s
   targetNamespace: default
+  values:
+    image:
+      tag: 0.1.0 # {"$imagepolicy": "flux-system:hello:tag"}
 
