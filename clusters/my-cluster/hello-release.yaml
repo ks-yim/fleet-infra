@@ -13,5 +13,6 @@ spec:
   interval: 1m0s
   targetNamespace: default
   values:
+    replicaCount: 3
     image:
       tag: 0.1.2 # {"$imagepolicy": "flux-system:hello:tag"}
